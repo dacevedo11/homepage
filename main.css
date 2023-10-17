@@ -16,7 +16,7 @@
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: whitesmoke;
+    color: white;
     text-align: center;
     overflow: hidden;
 }
@@ -38,21 +38,9 @@ footer {
 /* Wrapper*/
 
 #wrapper {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
-    -moz-justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
     justify-content: space-between;
     position: relative;
     min-height: 100vh;
@@ -64,26 +52,14 @@ footer {
 /* Header */
 
 #header {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
     max-width: 100%;
     text-align: center;
 }
 
 #header nav ul {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     margin-bottom: 0;
     list-style: none;
