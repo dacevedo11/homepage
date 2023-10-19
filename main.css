@@ -167,7 +167,6 @@ h6 {
 }
 
 .icons li {
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 25px;
+    display: inline-block;
+    margin-right: 25px;
 }
