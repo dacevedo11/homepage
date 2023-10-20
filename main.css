@@ -33,12 +33,6 @@
     transition: transform 0.3s ease; /* Add a smooth transition effect for the normal state */
 }
 
-.pfp:hover {
-    transform: scale(1.1); /* Scale up by 10% on hover */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-
-
 /* Header */
 header {
     background-color: rgba(27, 31, 34, 0.8); /* Adjust background color for consistency */
@@ -77,13 +71,7 @@ nav a {
     transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform property for smooth scaling */}
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
-    transform: scale(1.1); /* Enlarge the item on hover */
-}
-
-#header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.075);
-    border-radius: 4px;
+    transform: scale(1.2); /* Enlarge the item on hover */
 }
 
 /* Main */ 
@@ -93,7 +81,17 @@ nav a:hover {
     align-items: center;
     max-width: 100%;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#main img {
+    margin-bottom: 5px;
+}
+
+#main h1 {
+    margin-bottom:5px;
 }
 
 /* Type */
@@ -126,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     line-height: 1.3;
     letter-spacing: 0.5rem;
     padding-top: 10px;
@@ -140,6 +138,7 @@ h2 {
 
 h3 {
     font-size: 1rem;
+    letter-spacing: 0.15rem;
 }
 
 h4 {
@@ -169,4 +168,13 @@ h6 {
 .icons li {
     display: inline-block;
     margin-right: 25px;
+}
+
+.icons i {
+    transition: transform 0.3s ease; /* Add a smooth transition effect for the normal state */
+}
+
+.icons i:hover {
+    transform: scale(1.4); /* Scale up by 10% on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
