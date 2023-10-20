@@ -107,7 +107,19 @@ body {
 a {
     font-size: 1rem;
     font-weight: 600;
+    text-decoration: none;
+}
 
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:active {
+    color: red;
 }
 
 p {
@@ -170,11 +182,11 @@ h6 {
     margin-right: 25px;
 }
 
-.icons i {
+.icons a {
     transition: transform 0.3s ease; /* Add a smooth transition effect for the normal state */
 }
 
-.icons i:hover {
+.icons a:hover {
     transform: scale(1.4); /* Scale up by 10% on hover */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
