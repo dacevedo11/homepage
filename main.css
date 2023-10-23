@@ -23,12 +23,14 @@ body {
 #container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /*Header */
 #header {
     background-color: rgba(27, 31, 34, 0.8);
     padding: 10px;
+    margin-bottom: 20px; /* Add margin at the bottom to create space */
 }
 
 #header nav {
@@ -73,8 +75,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-}
+    margin: 20px auto 0; /* Add margin at the top to create space */}
 
 /* Content */
 #content {
