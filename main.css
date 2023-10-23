@@ -1,3 +1,4 @@
+/* Background */
 #background {
     position: fixed;
     top: 0;
@@ -11,44 +12,45 @@
     z-index: -1;
 }
 
-.pfp {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    display: block;
-    border: 2px solid #ffffff;
-    transition: transform 0.3s ease; /* Add a smooth transition effect for the normal state */
+/* Body */
+body {
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Header */
-header {
-    background-color: rgba(27, 31, 34, 0.8); /* Adjust background color for consistency */
+/* Container */
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header */
+#header {
+    background-color: rgba(27, 31, 34, 0.8);
     padding: 10px;
 }
 
-/* Navigation Bar */ 
-
-nav {
+#header nav {
     text-align: center;
     padding: 2px; /* Add padding for space inside the navigation bar */
 }
 
-nav ul {
+#header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-nav li {
+#header nav li {
     display: inline-block;
     margin-right: 10px;
     border-radius: 4px;
     margin-right: 15px; /* Increase margin between navigation items */
 }
 
-nav a {
+#header nav a {
     display: block;
     color: white;
     text-align: center;
@@ -58,44 +60,82 @@ nav a {
     border-radius: 4px; /* Add border-radius for rounded corners */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform property for smooth scaling */}
 
-nav a:hover {
+#header nav a:hover {
     transform: scale(1.2); /* Enlarge the item on hover */
 }
 
-nav a.active {
+#header nav a.active {
     color: darkorchid;
 }
 
-/* Main */ 
+/* Main */
 #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* Content */
+#content {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
     text-align: center;
-    padding-top: 75px;
-    margin-top: auto;
+    margin-top: auto; 
     margin-bottom: auto;
 }
 
-#main img {
+#content .pfp {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    border: 2px solid #ffffff;
+}
+
+#content img {
     margin-bottom: 5px;
 }
 
-#main h1 {
-    margin-bottom:5px;
+#content h1 {
+    margin-bottom: 5px;
 }
 
-/* Type */
-body {
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 1.65;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+
+#content .icons {
+    list-style: none;
 }
 
+#content .icons li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#content .icons a {
+    transition: transform 0.3s ease; /* Add a smooth transition effect for the normal state */
+}
+
+#content .icons a:link {
+    color: white;
+}
+
+#content .icons a:hover {
+    transform: scale(1.4); /* Scale up by 10% on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.outlined-text {
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+/* Types */
 a {
     font-size: 1rem;
     font-weight: 600;
@@ -153,32 +193,4 @@ h6 {
     font-size: 0.6rem;
 }
 
-.outlined-text {
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-}
 
-.icons {
-    list-style: none;
-}
-
-.icons li {
-    display: inline-block;
-    margin-right: 25px;
-}
-
-.icons a {
-    transition: transform 0.3s ease; /* Add a smooth transition effect for the normal state */
-}
-
-icons a:link {
-    color: white;
-}
-
-.icons a:hover {
-    transform: scale(1.4); /* Scale up by 10% on hover */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
