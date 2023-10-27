@@ -70,7 +70,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: stretch;
 }
 
 #main #pfp img {
@@ -84,10 +83,12 @@ body {
 }
 
 #main #heading h1 {
+    font-size:  3em;
 
 }
 
 #main #subheading h3 {
+    font-size: 2em;
 
 }
 
