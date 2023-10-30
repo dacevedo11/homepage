@@ -1,3 +1,5 @@
+/* site.css */
+
 /* ===== Background ===== */
 .background {
     position: fixed;
@@ -12,62 +14,49 @@
     z-index: -1;
 }
 
-/* ===== Body ===== */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-}
-
-/* ===== Container ===== */ 
-.container {
+/* ===== Navigation Bar ===== */
+header {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 31, 34, 0.8);
+    height: 7.5vh;
 }
 
-/* ===== Header ===== */
-.header {
-    background-color: rgba(27, 31, 34, 0.8);
-    padding: 10px;
+.topnav {
     text-align: center;
 }
 
-.header ul {
+.topnav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.header li {
+.topnav li {
     display: inline-block;
-    margin-right: 10px;
-    border-radius: 4px;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-.header a {
+.topnav a {
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.header a:hover {
+.topnav a:hover {
     transform: scale(1.2);
 }
 
-.header a.active {
+.topnav a.current {
     color: #9873AC;
 }
 
-/* ===== Main ===== */
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.topnav a:active {
+    color: #9873AC;
 }
