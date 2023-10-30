@@ -11,7 +11,9 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    height: 92.5vh;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
 }
@@ -20,21 +22,21 @@ body {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin-top: 0;
-    margin-bottom: 10px;
     display: block;
     border: 2px solid #ffffff;
+    margin: auto;
 }
 
 #name h1 {
     font-size: 3em;
-
+    margin: auto;
 }
 
 #title h3 {
     font-size: 2em;
-
+    margin: auto;
 }
+
 
 #links .icons {
     list-style: none;
