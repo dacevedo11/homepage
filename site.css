@@ -1,5 +1,5 @@
 /* ===== Background ===== */
-#background {
+.background {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,34 +20,34 @@ body {
 }
 
 /* ===== Container ===== */ 
-#container {
+.container {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
 /* ===== Header ===== */
-#header {
+.header {
     background-color: rgba(27, 31, 34, 0.8);
     padding: 10px;
     text-align: center;
 }
 
-#header ul {
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-#header li {
+.header li {
     display: inline-block;
     margin-right: 10px;
     border-radius: 4px;
     margin-right: 15px;
 }
 
-#header a {
+.header a {
     display: block;
     color: white;
     text-align: center;
@@ -57,86 +57,17 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#header a:hover {
+.header a:hover {
     transform: scale(1.2);
 }
 
-#header a.active {
+.header a.active {
     color: #9873AC;
 }
 
 /* ===== Main ===== */
-#main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-#main #pfp img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    display: block;
-    border: 2px solid #ffffff;
-}
-
-#main #heading h1 {
-    font-size:  3em;
-
-}
-
-#main #subheading h3 {
-    font-size: 2em;
-
-}
-
-#main #links icons {
-    list-style: none;
-}
-
-#main #links .icons li {
-    display: inline-block;
-    margin-right: 25px;
-}
-
-#main #links .icons a {
-    transition: transform 0.3s ease;
-}
-
-#main #links .icons a:link {
-    color: white;
-}
-
-#main #links .icons a:hover {
-    transform: scale(1.4);
-    transition: transform 0.3s ease;
-}
-
-/* ====== Miscellaneous ===== */
-
-.outlined-text {
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: #ffffff;
-}
-
-a:active {
-    color: #9873AC;
-}
-
-
-
-
-

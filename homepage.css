@@ -1,0 +1,68 @@
+#pfp img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    border: 2px solid #ffffff;
+}
+
+#heading h1 {
+    font-size:  3em;
+
+}
+
+#subheading h3 {
+    font-size: 2em;
+
+}
+
+#links icons {
+    list-style: none;
+}
+
+#links .icons li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#links .icons a {
+    transition: transform 0.3s ease;
+}
+
+#links .icons a:link {
+    color: white;
+}
+
+#links .icons a:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+/* ====== Miscellaneous ===== */
+
+.outlined-text {
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:active {
+    color: #9873AC;
+}
+
+
+
+
+
