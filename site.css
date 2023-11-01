@@ -25,6 +25,12 @@ header {
     padding: 0;
 }
 
+@media (max-width: 860px) {
+    #main-menu {
+        display: none;
+    }
+}
+
 .topnav {
     text-align: center;
 }
@@ -62,4 +68,45 @@ header {
 
 .topnav a:active {
     color: #9873AC;
+}
+
+/* === Hidden Menu === */
+.dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #50808E;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #3C606B;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@media (min-width: 861px) {
+    #hidden-menu {
+        display: none;
+    }
 }

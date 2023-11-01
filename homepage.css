@@ -39,8 +39,6 @@ body {
 
 #name h1 {
     font-size: 3rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
 }
 
 #title{
@@ -49,8 +47,9 @@ body {
 }
 
 #title h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-top: 0;
+    color: #D3D3D3;
 }
 
 #links {
