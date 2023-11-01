@@ -14,8 +14,14 @@ body {
     height: 90vh;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    
+}
+
+#pfp {
+    margin-top: 10vh;
+    padding: 0;
 }
 
 #pfp img {
@@ -24,21 +30,36 @@ body {
     height: 200px;
     display: block;
     border: 2px solid #ffffff;
-    margin: auto;
+}
+
+#name {
+    margin: 0;
+    padding: 0;
 }
 
 #name h1 {
-    font-size: 3em;
-    margin: auto;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+#title{
+    margin: 0;
+    padding: 0;
 }
 
 #title h3 {
-    font-size: 2em;
-    margin: auto;
+    font-size: 2rem;
+    margin-top: 0;
 }
 
+#links {
+    margin: 0;
+    padding: 0;
+}
 
 #links .icons {
+    margin-top: 0;
     list-style: none;
 }
 
