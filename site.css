@@ -19,8 +19,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(27, 31, 34);
-    height: 10vh;
+    background-color: rgba(27, 31, 34, 0.8);
     margin: 0;
     padding: 0;
 }
@@ -41,8 +40,8 @@ header {
 
 .topnav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     overflow: hidden;
 }
 
@@ -76,8 +75,8 @@ header {
 
 /* === Hidden Menu === */
 .dropdown ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
+    margin: auto;
     overflow: hidden;
 }
 
@@ -85,21 +84,19 @@ header {
     display: block;
     color: white;
     text-decoration: none;
-    margin-bottom: 0;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(27, 31, 34);
+    background-color: rgba(27, 31, 34, 0.8);
     min-width: 160px;
-    box-shadow: 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: white;
-    padding: 12px 16px;
+    padding: 15px 20px;
     display: block;
     text-align: left;
     text-decoration: none;
