@@ -3,6 +3,7 @@
 /* ===== Body ===== */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 }
@@ -11,12 +12,15 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    margin: auto;
-    padding: auto;
     justify-content: center;
     align-items: center;
-    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
 }
 
 #pfp {
@@ -31,21 +35,21 @@ body {
     border: 2px solid #ffffff;
 }
 
-#name {
+#heading {
     margin: 0;
     padding: 0;
 }
 
-#name h1 {
+#heading h1 {
     font-size: 3rem;
 }
 
-#title{
+#subheading{
     margin: 0;
     padding: 0;
 }
 
-#title h3 {
+#subheading h3 {
     font-size: 1.75rem;
     margin-top: 0;
 }
@@ -58,6 +62,7 @@ body {
 #links .icons {
     margin-top: 0;
     list-style: none;
+    font-size: 2.5em;
 }
 
 #links .icons li {
@@ -83,7 +88,7 @@ body {
 }
 
 #links .icons a:hover {
-    transform: scale(1.4);
+    transform: scale(1.25);
     transition: transform 0.3s ease;
 }
 
