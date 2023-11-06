@@ -5,18 +5,23 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* ===== Container ===== */
 .container {
     display: flex;
     flex-direction: column;
-    height: 90vh;
     margin: auto;
-    padding: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     justify-content: center;
     align-items: center;
-    
+    z-index: 1;
 }
 
 #pfp {
@@ -31,21 +36,27 @@ body {
     border: 2px solid #ffffff;
 }
 
-#name {
+@media (max-width: 485px) {
+    #subheading h3 {
+        display: none;
+    }
+}
+
+#heading {
     margin: 0;
     padding: 0;
 }
 
-#name h1 {
+#heading h1 {
     font-size: 3rem;
 }
 
-#title{
+#subheading{
     margin: 0;
     padding: 0;
 }
 
-#title h3 {
+#subheading h3 {
     font-size: 1.75rem;
     margin-top: 0;
 }

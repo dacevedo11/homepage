@@ -22,6 +22,7 @@ header {
     background-color: rgba(27, 31, 34, 0.8);
     margin: 0;
     padding: 5px;
+    z-index: 2;
 }
 
 @media (max-width: 860px) {
@@ -51,7 +52,7 @@ header {
 }
 
 .topnav a {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     display: block;
     color: white;
     text-align: center;
@@ -114,5 +115,19 @@ header {
 @media (min-width: 861px) {
     #hidden-menu {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .topnav ul {
+        margin: 0; /* Remove margin for the list inside the navigation bar */
+    }
+
+    .topnav li {
+        margin-right: 10px; /* Adjust margin between navigation items */
     }
 }
