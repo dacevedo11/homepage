@@ -36,12 +36,6 @@ body {
     border: 2px solid #ffffff;
 }
 
-@media (max-width: 485px) {
-    #subheading h3 {
-        display: none;
-    }
-}
-
 #heading {
     margin: 0;
     padding: 0;
@@ -108,3 +102,34 @@ body {
         -1px 1px 0 #000,
         1px 1px 0 #000;
 }
+
+@media (max-width: 600px) {
+    /* Adjust font sizes for small screens */
+    #heading h1 {
+        font-size: 1.5rem;
+    }
+
+    #subheading h3 {
+        font-size: 1rem;
+    }
+
+    #links .icons {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Adjust padding and margins for smaller screens */
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Further adjust profile picture size for very small screens */
+    #pfp img {
+        width: 125px;
+        height: 125px;
+    }
+}
+
