@@ -36,6 +36,25 @@ body {
     border: 2px solid #ffffff;
 }
 
+#pfp img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(0.2px, 0.2px) rotate(0deg); }
+    10% { transform: translate(-0.2px, -0.4px) rotate(-0.2deg); }
+    20% { transform: translate(-0.6px, 0px) rotate(0.2deg); }
+    30% { transform: translate(0.6px, 0.4px) rotate(0deg); }
+    40% { transform: translate(0.2px, -0.2px) rotate(0.2deg); }
+    50% { transform: translate(-0.2px, 0.4px) rotate(-0.2deg); }
+    60% { transform: translate(-0.6px, 0.2px) rotate(0deg); }
+    70% { transform: translate(0.6px, 0.2px) rotate(-0.2deg); }
+    80% { transform: translate(-0.2px, -0.2px) rotate(0.2deg); }
+    90% { transform: translate(0.2px, 0.4px) rotate(0deg); }
+    100% { transform: translate(0.2px, -0.4px) rotate(-0.2deg); }
+  }
+
 #heading {
     margin: 0;
     padding: 0;
