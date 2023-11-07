@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    margin: 100px;
+    text-align: center;
+    background-color: rgba(27, 31, 34, 0.85);
+    padding: 4.5rem 2.5rem 1.5rem 2.5rem;
+}
