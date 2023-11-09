@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="../css/site.css">
     <link rel="stylesheet" type="text/css" href="../css/about.css">
+    <script src="../js/script.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7c66d7972b.js" crossorigin="anonymous"></script>
 </head>
@@ -18,24 +19,25 @@
         <!-- Navigation Bar -->
         <nav class="topnav" id="main-menu">
             <ul>
-                <li><strong><a class="outlined-text" href="../index.html">HOME</a></strong></li>
-                <li><strong><a class="outlined-text current" href="about.html">ABOUT</a></strong></li>
-                <li><strong><a class="outlined-text" href="#portfolio">PORTFOLIO</a></strong></li>
-                <li><strong><a class="outlined-text" href="#experience">EXPERIENCE</a></strong></li>
-                <li><strong><a class="outlined-text" href="#research">RESEARCH</a></strong></li>
+                <li><span onclick="transitionToPage('../index.html')"><strong>HOME</strong></span></li>
+                <li><span onclick="transitionToPage('../html/about.html')" class="current"><strong>ABOUT</strong></span></li>
+                <li><span onclick="transitionToPage('../html/portfolio.html')"><strong>PORTFOLIO</strong></span></li>
+                <li><span onclick="transitionToPage('../html/experience.html')"><strong>EXPERIENCE</strong></span></li>
+                <li><span onclick="transitionToPage(',,/html/research.html')"><strong>RESEARCH</strong></span></li>
             </ul>
         </nav>
-        
+
         <!-- Hidden Menu -->
         <nav class="dropdown" id="hidden-menu">
             <ul>
                 <a href="#" class="dropbtn fa-solid fa-bars fa-2x"></a>
                 <div class="dropdown-content">
-                    <a class="outlined-text current" href="../index.html"><strong>HOME</strong></a> 
-                    <a class="outlined-text" href="about.html"><strong>ABOUT</strong></a>
-                    <a class="outlined-text" href="#portfolio"><strong>PORTFOLIO</strong></a>
-                    <a class="outlined-text" href="#experience"><strong>EXPERIENCE</strong></a> 
-                    <a class="outlined-text" href="#research"><strong>RESEARCH</strong></a>
+                    <span onclick="transitionToPage('../index.html')"><strong>HOME</strong></span>
+                    <span onclick="transitionToPage('../html/about.html')" class="current"><strong>ABOUT</strong></span>
+                    <span onclick="transitionToPage('../html/portfolio.html')"><strong>PORTFOLIO</strong></span>
+                    <span onclick="transitionToPage('../html/experience.html')"><strong>EXPERIENCE</strong></span>
+                    <span onclick="transitionToPage('../html/research.html')"><strong>RESEARCH</strong></span>
+
                 </div>
             </ul>
         </nav>
@@ -43,18 +45,19 @@
 
     <!-- Main -->
     <div class="main">
-            <!-- About -->
-            <article id="about">
-                <h2 class="major">About Me</h2>
-                <p>
-                    Hello! My name is Daniel! I am currently an undergraduate student at UC Santa Cruz. I'm studying Art & Design: Games and Playable Media. Before I was a college student, I served
-                    in the US Army for 4 years as a combat medic in the paratroopers.
-                </p>
-                <img src="../images/headshot.jpg">
+        <!-- About -->
+        <article id="about">
+            <h2 class="major">About Me</h2>
+            <p>
+                Hello! My name is Daniel! I am currently an undergraduate student at UC Santa Cruz. I'm studying Art &
+                Design: Games and Playable Media. Before I was a college student, I served
+                in the US Army for 4 years as a combat medic in the paratroopers.
+            </p>
+            <img src="../images/headshot.jpg">
 
-            </article>
+        </article>
 
-        </div>
+    </div>
 
     </div>
 

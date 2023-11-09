@@ -14,6 +14,128 @@ body {
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.65;
+
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+/* ===== Background ===== */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* ===== Navigation Bar ===== */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(27, 31, 34, 0.85);
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+.topnav {
+    text-align: center;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+}
+
+.topnav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.topnav span {
+    font-size: 1.25rem;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.topnav span:hover {
+    transform: scale(1.2);
+}
+
+.topnav span.current {
+    color: #9873AC;
+}
+
+.topnav span:active {
+    color: #9873AC;
+}
+
+/* === Hidden Menu === */
+.dropdown ul {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dropbtn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    line-height: 1.65;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(27, 31, 34, 0.85);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content span {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.dropdown-content span:hover {
+    background-color: #9873AC;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 860px) {
+    header {
+        justify-content: flex-start;
+    }
+
+    #main-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 861px) {
+    #hidden-menu {
+        display: none;
+    }
 }
 
 /* ===== Miscellaneous ===== */
@@ -92,123 +214,4 @@ h2 {
         line-height: 1.5;
     }
 
-}
-
-/* ===== Background ===== */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
-/* ===== Navigation Bar ===== */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(27, 31, 34, 1);
-    margin: 0;
-    padding: 0;
-    z-index: 2;
-}
-
-.topnav {
-    text-align: center;
-}
-
-.topnav ul {
-    list-style-type: none;
-    margin: auto;
-    padding: auto;
-    overflow: hidden;
-}
-
-.topnav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.topnav a {
-    font-size: 1.25rem;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.topnav a:hover {
-    transform: scale(1.2);
-}
-
-.topnav a.current {
-    color: #9873AC;
-}
-
-.topnav a:active {
-    color: #9873AC;
-}
-
-/* === Hidden Menu === */
-.dropdown ul {
-    list-style-type: none;
-    margin: auto;
-    overflow: hidden;
-}
-
-.dropbtn {
-    display: block;
-    color: white;
-    text-decoration: none;
-    line-height: 1.65;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(27, 31, 34, 0.85);
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 15px 20px;
-    display: block;
-    text-align: left;
-    text-decoration: none;
-    font-size: 0.875rem;
-}
-
-.dropdown-content a:hover {
-    background-color: #9873AC;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-@media (max-width: 860px) {
-    header {
-        justify-content: flex-start;
-    }
-
-    #main-menu {
-        display: none;
-    }
-}
-
-@media (min-width: 861px) {
-    #hidden-menu {
-        display: none;
-    }
 }
