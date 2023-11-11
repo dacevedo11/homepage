@@ -1,19 +1,17 @@
 .main {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    max-width: 50%;
+    margin: 5% auto;
 }
 
-#about {
+.major-section {
     display: block;
     background-color: rgba(27, 31, 34, 0.85);
     padding: 4.5rem 2.5rem 1.5rem 2.5rem;
     border-radius: 4px;
-    margin: 50px;
 }
