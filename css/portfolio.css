@@ -9,6 +9,12 @@
     margin: 5% auto;
 }
 
+@media screen and (max-width: 768px) {
+    .main {
+        max-width: 80%;
+    }
+}
+
 .content {
     display: block;
     background-color: rgba(27, 31, 34, 0.85);
