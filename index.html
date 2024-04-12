@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Daniel Acevedo | Portfolio</title>
+    <title>Daniel Acevedo | Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
     <link rel="stylesheet" type="text/css" href="css/site.css">
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7c66d7972b.js" crossorigin="anonymous"></script>
 </head>
@@ -18,102 +18,62 @@
         <!-- Navigation Bar -->
         <nav class="topnav" id="main-menu">
             <ul>
-                <li><a href="html/home.html"><strong>HOME</strong></a></li>
+                <li><a href="index.html"><strong>HOME</strong></a></li>
                 <li><a href="html/about.html"><strong>ABOUT</strong></a></li>
-                <li><a href="index.html"><strong>PORTFOLIO</strong></a></li>
+                <li><a href="html/portfolio.html"><strong>PORTFOLIO</strong></a></li>
                 <li><a href="html/experience.html"><strong>EXPERIENCE</strong></a></li>
                 <li><a href="html/research.html"><strong>RESEARCH</strong></a></li>
-                <li><a href="pdf/cv.pdf" target="_blank"><strong>CV</strong></a></li>
             </ul>
         </nav>
 
         <!-- Hidden Menu -->
         <nav class="dropdown" id="hidden-menu">
             <ul>
-                <a href="#" class="dropbtn fa-solid fa-bars fa-2x"></a>
+                <a href="#" class="dropbtn fa-solid fa-bars"></a>
                 <div class="dropdown-content">
-                    <a href="html/home.html"><strong>HOME</strong></a>
+                    <a href="index.html"><strong>HOME</strong></a>
                     <a href="html/about.html"><strong>ABOUT</strong></a>
-                    <a href="index.html"><strong>PORTFOLIO</strong></a>
+                    <a href="html/portfolio.html"><strong>PORTFOLIO</strong></a>
                     <a href="html/experience.html"><strong>EXPERIENCE</strong></a>
                     <a href="html/research.html"><strong>RESEARCH</strong></a>
-                    <a href="pdf/cv.pdf" target="_blank"><strong>CV</strong></a>
                 </div>
             </ul>
         </nav>
     </header>
 
-    <!-- Main -->
-    <div class="main">
+    <!-- Container -->
+    <div class="container">
 
-        <!-- Portfolio -->
-        <article class="content">
-            <h2 class="major">Portfolio</h2>
+        <!-- pfp -->
+        <div id="pfp">
+            <img class="pfp" src="images/Untitled_Artwork.png">
+        </div>
 
-            <div class="inner">
-                <img src="../images/slime.png">
-                <h3>Project Slime</h3>
-                <p>
-                    This is a small 2D RPG that I made for a 2 week game jam. This was my first time using
-                    Godot, so it took me some time to get a running version of the game. I added a player and 
-                    NPC's with sprite animations, a scene change, y-sorting, and dialogue. This
-                    version of the game is only a prototype so far. 
-                </p>
-                <a href="https://dacevedo11.itch.io/project-slime"
-                    target="_blank">>> Link to Itch.io Page <<</a>
-            </div>
+        <!-- Heading -->
+        <div id="heading">
+            <h1>Daniel Acevedo</h1>
+        </div>
 
-            <div class="inner">
-                <img src="../images/lechuza.png">
-                <h3>La Lechuza</h3>
-                <p>This is a Visual Novel that I worked on over a 2 week period for a class project. It adapts the story
-                    of La Lechuza,
-                    which is rooted in Mexican and Texano folklore. According to legend, La Lechuza was a witch who
-                    made a deal with the devil and could transform into a giant owl. I designed the characters and
-                    lead the coding part of the project.</p>
-                <a href="https://dacevedo11.itch.io/la-lechuza" target="_blank">>> Link to Itch.io Page <<</a>
-            </div>
+        <!-- Subheading-->
+        <div id="subheading">
+            <h3>Game Design & Interactive Media</h3>
+        </div>
 
-            <div class="inner">
-                <img src="../images/silver_bullet.png">
-                <h3>Lotería: US Army Edition</h3>
-                <p> Lotería is a traditional Mexican game similar to Bingo and is full of references to different
-                    aspects of Mexican culture. When I was younger, I played using beans as markers. This was my way of
-                    bringing together two significant parts of my life. This was a completely personal project and I
-                    did all of the art myself in one afternoon.</p>
-                <a href="https://dacevedo11.itch.io/loteria-us-army-edition" target="_blank">>> Link to Itch.io Page <<</a>
-            </div>
-
-            <div class="inner">
-                <img src="../images/character-sketch.jpg">
-                <h3>Original Character</h3>
-                <p>The first image is the fully-colored, digital sketch I did using Procreate on my iPad. The front and
-                    side profiles are the references I used to create a 3D model in Blender. Next is the 3D model with 
-                    seams and UV unwrap. And finally, the completed 3D model doing a run cycle. This entire project was 
-                    the culminating assignment for a class done over a 10 week term.</p>
-                <a href="https://www.deviantart.com/dacevedo11/gallery/89772426/character-design-concept"
-                    target="_blank">>> Link to DeviantArt Page <<</a>
-            </div>
-
-            <div class="inner">
-                <img src="../images/tf.png">
-                <h3>TeamFight!</h3>
-                <p>TeamFight! is a physical card game I made over a 5 week period for a final class project. I wanted
-                    to replicate Dungeons and
-                    Dragon's style of combat that you can play against your friends and without the need of a long
-                    D&D campaign. The characters are based on common classes you might see in RPG fantasy games like
-                    D&D, Dark Souls or Diablo.</p>
-                <a href="https://dacevedo11.itch.io/teamfight" target="_blank">>> Link to Itch.io Page <<</a>
-            </div>
-
-        </article>
-
-
-
+        <!-- Links -->
+        <div id="links">
+            <ul class="icons">
+                <li><a href="pdf/cv.pdf" target="_blank" class="fa-solid fa-file-pdf"></a></li>
+                <li><a href="https://www.linkedin.com/in/danacevedo/" target="_blank" class="fa-brands fa-linkedin"></a></li>
+                <li><a href="https://github.com/dacevedo11" target="_blank" class="fa-brands fa-github"></a></li>
+                <li><a href="https://dacevedo11.itch.io/" target="_blank" class="fa-brands fa-itch-io"></a></li>
+                <li><a href="https://www.deviantart.com/dacevedo11/gallery" target="_blank" class="fa-brands fa-deviantart"></a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- Background -->
     <div class="background"></div>
+
 </body>
 
 </html>
